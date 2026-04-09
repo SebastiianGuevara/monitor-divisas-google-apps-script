@@ -67,7 +67,7 @@ Descarga los archivos `Codigo.gs`, `_config.example.gs` y `appsscript.json`.
 2. Regístrate con tu correo
 3. Copia tu API Key del dashboard
 
-```markdown
+```
 ### 3. Preparar Google Drive
 
 Crea esta estructura en tu Drive:
@@ -150,7 +150,7 @@ const CONFIG = {
 
 ---
 
-```markdown
+```
 ## Cómo funciona internamente
 
 ```text
