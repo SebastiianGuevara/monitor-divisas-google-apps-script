@@ -43,7 +43,7 @@ todos los días a las 8am sin intervención humana.
 
 ## Estructura del proyecto
 
-```text
+```
 monitor-divisas-google-apps-script/
 ├── Codigo.gs              # Script principal
 ├── _config.example.gs     # Plantilla de configuracion
@@ -153,7 +153,7 @@ const CONFIG = {
 ```
 ## Cómo funciona internamente
 
-```text
+
 ejecutarDiario() [trigger 8am]
 |
 ├── actualizarTasas()
