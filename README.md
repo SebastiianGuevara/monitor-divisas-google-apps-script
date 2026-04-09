@@ -72,7 +72,6 @@ Descarga los archivos `Codigo.gs`, `_config.example.gs` y `appsscript.json`.
 
 Crea esta estructura en tu Drive:
 
-```text
 Proyecto-API-Reportes/
 ├── Plantillas/    # Aquí va el Google Doc de plantilla
 └── Reportes-PDF/  # Aquí se guardan los PDFs generados
@@ -80,19 +79,20 @@ Proyecto-API-Reportes/
 
 ### 4. Crear la plantilla en Google Docs
 
-Crea un Google Doc en la carpeta `Plantillas/` con estos placeholders:
+Crea un Google Doc en la carpeta `Plantillas/` con estos placeholders (puedes darles el formato y diseño que quieras):
 
+```
 Fecha: {{fecha}}
 Hora: {{hora}}
 Base: {{moneda_base}}
 
-USD/COP: {{usd_cop}} Variacion: {{variacion_cop}}
-USD/EUR: {{usd_eur}} Variacion: {{variacion_eur}}
-USD/MXN: {{usd_mxn}} Variacion: {{variacion_mxn}}
-USD/BRL: {{usd_brl}} Variacion: {{variacion_brl}}
-USD/ARS: {{usd_ars}} Variacion: {{variacion_ars}}
+USD/COP: {{usd_cop}} | Variación: {{variacion_cop}}
+USD/EUR: {{usd_eur}} | Variación: {{variacion_eur}}
+USD/MXN: {{usd_mxn}} | Variación: {{variacion_mxn}}
+USD/BRL: {{usd_brl}} | Variación: {{variacion_brl}}
+USD/ARS: {{usd_ars}} | Variación: {{variacion_ars}}
 
-
+```
 ### 5. Crear el Google Sheets
 
 Crea un archivo con 3 hojas:
