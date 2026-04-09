@@ -43,16 +43,16 @@ todos los días a las 8am sin intervención humana.
 
 ## Estructura del proyecto
 
+```text
 monitor-divisas-google-apps-script/
-├── Codigo.gs # Script principal
-├── _config.example.gs # Plantilla de configuracion
-├── appsscript.json # Manifiesto y permisos
-├── .gitignore # Excluye _config.gs con datos privados
-├── screenshots/ # Capturas del proyecto funcionando
+├── Codigo.gs              # Script principal
+├── _config.example.gs     # Plantilla de configuracion
+├── appsscript.json        # Manifiesto y permisos
+├── .gitignore             # Excluye _config.gs con datos privados
+├── screenshots/           # Capturas del proyecto funcionando
 └── README.md
 
-
-
+```
 ---
 
 ## Instalacion paso a paso
@@ -67,14 +67,16 @@ Descarga los archivos `Codigo.gs`, `_config.example.gs` y `appsscript.json`.
 2. Regístrate con tu correo
 3. Copia tu API Key del dashboard
 
+```markdown
 ### 3. Preparar Google Drive
 
 Crea esta estructura en tu Drive:
 
+```text
 Proyecto-API-Reportes/
-├── Plantillas/ <- aqui va el Google Doc de plantilla
-└── Reportes-PDF/ <- aqui se guardan los PDFs generados
-
+├── Plantillas/    # Aquí va el Google Doc de plantilla
+└── Reportes-PDF/  # Aquí se guardan los PDFs generados
+```
 
 ### 4. Crear la plantilla en Google Docs
 
@@ -148,28 +150,30 @@ const CONFIG = {
 
 ---
 
-## Como funciona internamente
+```markdown
+## Cómo funciona internamente
 
+```text
 ejecutarDiario() [trigger 8am]
 |
 ├── actualizarTasas()
-| └── UrlFetchApp.fetch(API) → JSON
-| └── Escribe en Tasas-Hoy y Historial
-| └── Calcula variacion vs ayer
+|   └── UrlFetchApp.fetch(API) → JSON
+|   └── Escribe en Tasas-Hoy y Historial
+|   └── Calcula variacion vs ayer
 |
 ├── actualizarDashboard()
-| └── Copia KPIs al Dashboard
-| └── Muestra ultimos 7 dias del historial
+|   └── Copia KPIs al Dashboard
+|   └── Muestra ultimos 7 dias del historial
 |
 └── generarYEnviarReporte()
-└── Copia plantilla Google Docs
-└── Reemplaza {{placeholders}} con datos reales
-└── Convierte a PDF
-└── Guarda en Drive
-└── Envia por Gmail con PDF adjunto
-└── Elimina copia temporal
+    └── Copia plantilla Google Docs
+    └── Reemplaza {{placeholders}} con datos reales
+    └── Convierte a PDF
+    └── Guarda en Drive
+    └── Envia por Gmail con PDF adjunto
+    └── Elimina copia temporal
 
-
+```
 ---
 
 ## Seguridad
