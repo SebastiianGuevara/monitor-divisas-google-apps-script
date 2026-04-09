@@ -10,9 +10,13 @@ todos los días a las 8am sin intervención humana.
 ## Demo
 
 ![Tasas del día](screenshots/01-hoja-tasas-hoy.png)
+![Historial](screenshots/02-historial.png)
 ![Dashboard](screenshots/03-dashboard.png)
 ![Reporte PDF](screenshots/04-reporte-pdf.png)
 ![Correo recibido](screenshots/05-correo-recibido.png)
+![panel principal](screenshots/06-panel-principal.png)
+![google drive pdf](screenshots/07-google-drive-pdf.png)
+![exchangerate-api](screenshots/08-exchangerate-api.png)
 
 ---
 
